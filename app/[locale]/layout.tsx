@@ -7,6 +7,7 @@ import { ConfigProvider, Layout } from 'antd';
 import AppHeader from '@/components/layout/header/app-header';
 import AppContent from '@/components/layout/content/app-content';
 import AppFooter from '@/components/layout/footer/app-footer';
+import '@/styles/dist/css/kent.min.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
