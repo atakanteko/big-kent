@@ -1,0 +1,11 @@
+.ant-layout {
+    background-color: unset;
+}
+
+.kent-layout {
+    color: #fff;
+    // background: #212121 !important;
+}
+
+@import "./header/header";
+@import "./content/content";

@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google';
+import { Bebas_Neue } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { createTranslator, NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
@@ -9,7 +9,12 @@ import AppContent from '@/components/layout/content/app-content';
 import AppFooter from '@/components/layout/footer/app-footer';
 import '@/styles/dist/css/kent.min.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const bebas = Bebas_Neue({
+  weight: ['400'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 type Props = {
   children: ReactNode;
@@ -46,21 +51,15 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={bebas.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <AppProvider>
-            <ConfigProvider
-              theme={{
-                token: {},
-                components: {},
-              }}
-            >
-              <Layout>
-                <AppHeader />
+            <Layout className="kent-layout">
+              {/* <AppHeader />
                 <AppContent>{children}</AppContent>
-                <AppFooter />
-              </Layout>
-            </ConfigProvider>
+                <AppFooter /> */}
+              {children}
+            </Layout>
           </AppProvider>
         </NextIntlClientProvider>
       </body>

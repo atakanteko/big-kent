@@ -1,0 +1,30 @@
+$gridBreakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1600px
+) !default;
+
+section.global-container {
+    @media screen and (max-width: map-get($gridBreakpoints, sm)) {
+        padding-inline: 20px;
+    }
+    @media screen and (min-width: map-get($gridBreakpoints, sm)) {
+        padding-inline: 40px;
+    }
+    @media screen and (min-width: map-get($gridBreakpoints, md)) {
+        padding-inline: 100px;
+    }
+    @media screen and (min-width: map-get($gridBreakpoints, lg)) {
+        padding-inline: 110px;
+    }
+    @media screen and (min-width: map-get($gridBreakpoints, xl)) {
+        padding-inline: 156px;
+    }
+    @media screen and (min-width: map-get($gridBreakpoints, xxl)) {
+        max-width: 1920px;
+        margin: auto;
+    }
+}
