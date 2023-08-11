@@ -495,4 +495,128 @@ input {
 }
 .hero-section-layout .home-who-i-am {
   background-color: blue;
+}
+
+.nav-section {
+  padding-bottom: 120px;
+  background: #fff;
+  z-index: 1000;
+  position: relative;
+}
+.nav-section .ant-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-section .nav-bar {
+  transform: translateY(-32px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  width: auto;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: var(--white, #fff);
+  box-shadow: 0px 4px 70px 0px rgba(232, 68, 68, 0.22);
+  gap: 24px;
+}
+.nav-section .nav-bar .link-box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.nav-section .nav-bar .link-box a h5 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #e84444;
+}
+.nav-section .catchword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-section .catchword .catchword-text {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.nav-section .catchword .catchword-text h1 {
+  text-align: center;
+  font-size: 24px;
+}
+.nav-section .catchword .catchword-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.nav-section .catchword .catchword-text ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nav-section .catchword .catchword-text ul li span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.nav-section .image-wrapper {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .nav-section .catchword .catchword-text {
+    gap: 24px;
+  }
+  .nav-section .catchword .catchword-text h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav-section .catchword .catchword-text {
+    gap: 24px;
+  }
+  .nav-section .catchword .catchword-text h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .nav-section .catchword .catchword-text ul li span {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-section .catchword .catchword-text {
+    gap: 24px;
+  }
+  .nav-section .catchword .catchword-text h1 {
+    text-align: left;
+    font-size: 44px;
+    line-height: 56px;
+  }
+  .nav-section .catchword .catchword-text ul li span {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .nav-section .catchword .catchword-text {
+    gap: 32px;
+  }
+  .nav-section .catchword .catchword-text h1 {
+    text-align: left;
+    font-size: 56px;
+    line-height: 64px;
+  }
 }/*# sourceMappingURL=kent.css.map */

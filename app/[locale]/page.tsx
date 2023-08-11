@@ -1,20 +1,12 @@
 import Hero from '@/components/app/home/hero/hero';
+import NavSection from '@/components/app/home/nav-section/nav-section';
 import HomePageLayout from '@/components/home-page-layout';
 
 export default function IndexPage() {
   return (
     <HomePageLayout>
       <Hero />
-      {/* <div className="home-who-i-am">
-        <h1>Atakan</h1>
-        <h1>Atakan</h1>
-        <h1>Atakan</h1>
-        <h1>Atakan</h1>
-        <h1>Atakan</h1>
-        <h1>Atakan</h1>
-        <h1>Atakan</h1>
-        <h1>Atakan</h1>
-      </div> */}
+      <NavSection />
     </HomePageLayout>
   );
 }
