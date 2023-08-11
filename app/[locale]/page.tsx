@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import HomePageLayout from '@/components/home-page-layout';
 import { Col, Row } from 'antd';
 import Image from 'next/image';
@@ -9,7 +9,7 @@ import WUG2 from '@/public/image/what-u-get-2.svg';
 import WUG3 from '@/public/image/what-u-get-3.svg';
 
 export default function IndexPage() {
-  const t = useTranslations('IndexPage');
+  // const t = useTranslations('IndexPage');
   // <p className="max-w-[590px]">title={t('title')}</p>
 
   return (
